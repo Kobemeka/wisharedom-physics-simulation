@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wisharedom Fizik Simülasyonu</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./src/sketch.js"></script>
+        <link rel="stylesheet" href="./src/style.css">
+
+        <link rel="shortcut icon" href="../logos/Wisharedom Logo Blue.svg" type="image/x-icon"> 
+    </head>
+    <body>
+        <div id="main">
+            <div id="simulation">
+
+            </div>
+            <div id="controls">
+                <div class="sim-control" id="obj-lib">
+                    
+                    <span class="control-span" id="add-object">+</span>
+                    <span class="control-span" id="remove-object">-</span>
+                </div>
+                <div class="sim-control" id="control-0">
+                    <span class="control-span" id="run-simulation">run</span>
+                    <span class="control-span" id="simulation-time"></span>
+
+                </div>
+                <div class="sim-control" id="sim-control-1-1">
+                    <div class="range" id="range-0">
+                        <input id="sim-speed" value="1" min="0.1" max="60" step="0.1" type="range">
+                        
+                    </div>
+                    <div class="range-label" id="range-label-0">
+                        <span class="sim-speed-label" id="sim-speed-label"></span>
+                        
+                    </div>
+                </div>
+                <div class="sim-control" id="control-1">
+                    <div class="range" id="range-1">
+                        <input id="x-coord" value="0" type="range">
+                        <input id="y-coord" value="0" type="range">
+                    </div>
+                    <div class="range-label" id="range-label-1">
+                        <span class="x-coord-label" id="x-coord-label"></span>
+                        <span class="y-coord-label" id="y-coord-label"></span>
+                    </div>
+                </div>
+                <div class="sim-control" id="control-2">
+                    <div class="range" id="range-2">
+
+                        <input id="x-vel" value="0" type="range">
+                        <input id="y-vel" value="0" type="range">
+                    </div>
+                    <div class="range-label" id="range-label-2">
+                        <span class="x-vel-label" id="x-vel-label"></span>
+                        <span class="y-vel-label" id="y-vel-label"></span>
+                    </div>
+                </div>
+                <div class="sim-control" id="control-3">
+                    <div class="range" id="range-3">
+
+                        <input id="x-acc" value="0" type="range">
+                        <input id="y-acc" value="0" type="range">
+                    </div>
+                    <div class="range-label" id="range-label-3">
+                        <span class="x-acc-label" id="x-acc-label"></span>
+                        <span class="y-acc-label" id="y-acc-label"></span>
+                    </div>
+                </div>
+                <div class="object-info sim-control" id="object-info">
+                    
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
